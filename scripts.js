@@ -1,19 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
-    const buscadorForm = document.querySelector('.buscador');
-    
-    if (buscadorForm) {
-        const inputBusqueda = buscadorForm.querySelector('.input-busqueda');
-        buscadorForm.addEventListener('submit', function(event) {
-            event.preventDefault(); 
-            const terminoDeBusqueda = inputBusqueda.value.trim();
-            if (terminoDeBusqueda) {
-                alert('Has buscado: ' + terminoDeBusqueda);
-            } else {
-                console.log("El campo de búsqueda está vacío.");
-            }
-        });
-    }
+  
 
     const stepButtons = document.querySelectorAll('[data-target]');
     const portadaContenido = document.querySelector('.portada-contenido');
