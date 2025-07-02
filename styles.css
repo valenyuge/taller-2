@@ -535,6 +535,12 @@
     background-size: cover;
 }
 
+.card-enlace {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit;       /* Hace que herede el color de texto normal */
+    display: block;       /* Asegura que ocupe todo el espacio */
+}
+
 /* ==================================================================== */
 /* --- 7. SECCIÓN: TESTIMONIOS --- */
 /* ==================================================================== */
@@ -1077,7 +1083,7 @@ section.seccion-podcast .podcast-carousel {
 /* Clase modificadora para el fondo de la sección de Libros */
 .fondo-libros {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* El degradado */
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), /* El degradado */
         url('img/Fondo-Libros.png'); /* La imagen específica */
 }
 
@@ -1090,14 +1096,14 @@ section.seccion-podcast .podcast-carousel {
 
 .fondo-podcast {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
         url('img/Fondo-Podcast.jpg'); /* Otra imagen */
         padding-bottom: 30px;
 }
 
 .fondo-experiencias {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)),
         url('img/fondo-experiencias.gif'); /* Otra imagen */
         padding-bottom: 30px;
 }
@@ -1141,7 +1147,7 @@ section.seccion-podcast .podcast-carousel {
     text-align: center;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('img/fondo-libros.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url('img/fondo-libros.gif');
 }
 
 /* (En el futuro, podrías crear otra para podcast) */
@@ -1169,7 +1175,7 @@ section.seccion-podcast .podcast-carousel {
     /* El fondo con imagen y degradado va aquí */
     
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
         url('img/Fondo-Podcast.jpg'); /* <-- La ruta a tu imagen */
     background-color: black;
     transition: background-color 1-s ease-out;
@@ -1183,7 +1189,7 @@ section.seccion-podcast .podcast-carousel {
 
 /* Estilo para la caja exterior (el lienzo del fondo) */
 .seccion-catalogo-fondo {
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('img/Fondo-Libros.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url('img/Fondo-Libros.png');
     background-size: cover;
     background-position: center;
     padding: 80px 20px; /* Espacio vertical */
@@ -1200,7 +1206,7 @@ section.seccion-podcast .podcast-carousel {
 /* Fondo específico para la página de Notas */
 .fondo-notas {
     background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 1),
         url('img/fondo-notas.png'); /* <-- Pon aquí la ruta a tu imagen para las notas */
     
     /* Propiedades para que la imagen se vea bien */
@@ -1212,8 +1218,8 @@ section.seccion-podcast .podcast-carousel {
 /* Sección de fondo para la página de Notas (ocupa todo el ancho) */
 .seccion-fondo-notas {
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('img/fondo-notas.jpg'); /* <-- Pon aquí la ruta a tu imagen para las notas */
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 1),
+        url(img/fondo-notas.jpg); /* <-- Pon aquí la ruta a tu imagen para las notas */
     background-size: cover;
     background-position: center;
     background-attachment: scroll; /* O 'fixed' para el efecto parallax */
@@ -1236,5 +1242,63 @@ section.seccion-podcast .podcast-carousel {
     text-align: center; /* Centra los botones de paginación */
 }
 /* --- ESTILOS PARA LAS SECCIONES DE CATÁLOGO --- */
+
+/* ==================================================================== */
+/* --- ESTILOS PARA PÁGINA DE NOTA INDIVIDUAL --- */
+/* ==================================================================== */
+
+/* Portada con imagen de fondo a todo el ancho */
+.articulo-portada {
+    height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
+    position: relative; /* Para posicionar el texto encima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    
+    /* La imagen de fondo con un velo oscuro para que el texto resalte */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/articulos-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.articulo-portada-contenido {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.articulo-portada-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 72px;
+    line-height: 1.1;
+    margin: 0;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Sombra para el texto */
+}
+
+.articulo-portada-autor {
+    font-family: 'Gotham', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    margin: 15px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Cuerpo del artículo, con ancho de lectura cómodo */
+.articulo-cuerpo {
+    max-width: 700px; /* Ancho ideal para la lectura de texto largo */
+    margin: 80px auto; /* Centra el bloque de texto y le da espacio vertical */
+    padding: 0 20px;
+}
+
+.articulo-cuerpo p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #e0e0e0;
+    margin-bottom: 1.5em; /* Espacio entre párrafos */
+}
+
+
+
 
 }
