@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gato y La Caja | Libros</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <header class="encabezado">
+        <a href="index.html" class="logo-titulo">
+            <img src="img/logo-negro.png" alt="logo" class="logo">
+            <h1>El Gato y La Caja</h1>
+        </a>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+        <form class="buscador">
+            <input type="text" class="input-busqueda" placeholder="Buscar">
+            <button type="submit" class="boton-busqueda" aria-label="Buscar">
+                <img src="img/lupa-negra.png" alt="Icono de búsqueda">
+            </button>
+        </form>
+    </header>
+
+    <main>
+        <section class="portada-interna portada-libros">
+            <div class="portada-contenido-interno">
+                <h1 class="titulo-pagina">Nuestra Colección de Libros</h1>
+                <p class="subtitulo-pagina">Un catálogo completo de nuestras obras y lecturas recomendadas.</p>
+                <img src="img/libro-portada.png" alt="Imagen de libro destacado" class="imagen-portada-destacada">
+                <div class="opciones-portada">
+                    <a href="#historia" class="boton-portada boton--libros">Historia 📜</a>
+                    <a href="#ciencia-naturaleza" class="boton-portada boton--podcast">Ciencia y Naturaleza 🧪</a>
+                    <a href="#ciencia-ficcion" class="boton-portada boton--experiencias">Ciencia Ficción 🪐</a>
+                </div>
+            </div>
+        </section>
+        <section class="seccion-catalogo-fondo">
+        <div class="catalogo-libros-contenedor">
+            
+            <article class="libro-catalogo-item">
+                <img src="img/libro-1.png" alt="Portada del libro El Reino" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">El Reino | Vida y obra de hongos y humanos</h2>
+                    <p class="libro-catalogo-autor">Eugenia López</p>
+                    <p class="libro-catalogo-descripcion">Un libro sobre hongos, humanos y los profundos lazos que nos unen. Mezcla de celebración, ensayo, enciclopedia y viaje.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-2.png" alt="Portada del libro La máquina ingobernable" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">La máquina ingobernable | Historia de cuatro capitalismos</h2>
+                    <p class="libro-catalogo-autor">Alejandro Galliano</p>
+                    <p class="libro-catalogo-descripcion">Un ensayo sobre las transformaciones del capitalismo entendido de manera ampliada, como un entorno. Narra el mundo y la realidad histórica de Argentina.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-3.png" alt="Portada del libro Espacio Negativo" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Espacio Negativo</h2>
+                    <p class="libro-catalogo-autor">El Gato y La Caja</p>
+                    <p class="libro-catalogo-descripcion">Una colección de novelas para romper el presente y volverlo a armar. La literatura como pesadilla. La imaginación como necesidad.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="libro-catalogo-item">
+                <img src="img/libro-4.png" alt="Portada del libro La suerte de tu lado" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">La suerte de tu lado</h2>
+                    <p class="libro-catalogo-autor">Marina Larrondo</p>
+                    <p class="libro-catalogo-descripcion">Una crónica en primera persona planteada como una pesquisa para la que la autora no deja piedra sin levantar: el sistema de salud, la medicina reproductiva, las terapias holísticas y el pensamiento mágico.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-5.png" alt="Portada del libro Ok, Pandora" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Ok, Pandora</h2>
+                    <p class="libro-catalogo-autor">Muchos Autores</p>
+                    <p class="libro-catalogo-descripcion">Seis ensayos que abordan la inteligencia artificial desde la historia, la filosofía, el desafío tecnológico y los problemas sociales. ¿Puede pensar una máquina? ¿Se puede regular la IA?</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-6.png" alt="Portada del libro La invención de la comida" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">La invención de la comida</h2>
+                    <p class="libro-catalogo-autor">Ezequiel Arrieta</p>
+                    <p class="libro-catalogo-descripcion">Este libro propone entender la comida a través de la historia de nuestra especie, y también entender nuestra especie a través de la historia de la comida.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-7.png" alt="Portada del libro Las ceremonias" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Las ceremonias | Crónicas de personas que usan drogas</h2>
+                    <p class="libro-catalogo-autor">Marcos Aramburu</p>
+                    <p class="libro-catalogo-descripcion">Un recorrido por las vidas de distintas personas, atravesadas por su relación con diferentes sustancias. Porque si cada persona es única, cada ceremonia también.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-8.png" alt="Portada del libro Clima" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Clima | El desafío de diseño más grande de todos los tiempos</h2>
+                    <p class="libro-catalogo-autor">Varios autores y autoras</p>
+                    <p class="libro-catalogo-descripcion">En este libro nos proponemos desentrañar la maraña de información que se encuentra disponible, para entender cómo llegamos hasta acá y a dónde nos estamos dirigiendo.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-9.png" alt="Portada del libro Sobre Drogas" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Sobre Drogas</h2>
+                    <p class="libro-catalogo-autor">Muchos Autores</p>
+                    <p class="libro-catalogo-descripcion">Un proyecto sobre ciencia, política y la relación entre las sustancias psicoactivas y nosotros. Busca generar espacios de discusión sobre las políticas públicas de drogas.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-10.png" alt="Portada del libro Las olas" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Las olas | Conceptos y herramientas de salud mental</h2>
+                    <p class="libro-catalogo-autor">Ángel Gargiulo</p>
+                    <p class="libro-catalogo-descripcion">Salud mental basada en evidencia. Un libro y un cuaderno de ejercicios repletos de conceptos y herramientas para sumar bienestar a tu vida.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-11.png" alt="Portada del libro El nudo de la conciencia" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">El nudo de la conciencia</h2>
+                    <p class="libro-catalogo-autor">Enzo Tagliazucchi</p>
+                    <p class="libro-catalogo-descripcion">Este libro define y propone lo que pueden ser las próximas herramientas para resolver, finalmente, uno de los enigmas más insondables para la humanidad: el enigma de la conciencia.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-12.png" alt="Portada del libro Profano" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Profano</h2>
+                    <p class="libro-catalogo-autor">El Gato y La Caja</p>
+                    <p class="libro-catalogo-descripcion">El objetivo de este proyecto es sacar lo sagrado a la luz. Pasear por afuera del templo y ver a dónde nos llevan los pasos. Si existe algo sagrado, acaso sean los pasos.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-13.png" alt="Portada del libro La pausa" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">La pausa</h2>
+                    <p class="libro-catalogo-autor">Juan Cruz Balian</p>
+                    <p class="libro-catalogo-descripcion">Una carabina antigua, un pasado de oficina, un mazo de tarot. La pausa es una incursión a la parte más fría de un planeta enmudecido. Una novela bajo un sol indiferente.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-14.png" alt="Portada del libro Fiebre" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Fiebre | Breve Colección de Epidemias</h2>
+                    <p class="libro-catalogo-autor">Juan Manuel Carballeda</p>
+                    <p class="libro-catalogo-descripcion">Un recorrido por las grandes epidemias de la historia de la humanidad. La viruela, la gripe española, el cólera, la peste negra y otras tantas veces que tuvimos que sobrevivir.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-15.png" alt="Portada del libro Pensar con otros" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Pensar con otros | Una guía de supervivencia en tiempos de posverdad</h2>
+                    <p class="libro-catalogo-autor">Guadalupe Nogués</p>
+                    <p class="libro-catalogo-descripcion">Un análisis práctico sobre la posverdad que va de lo cotidiano y personal a lo político y social. Este libro propone un viaje introspectivo sobre la forma en la que vemos el mundo.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-16.png" alt="Portada del libro Breve Atlas Anecdótico de la Ciencia" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Breve Atlas Anecdótico de la Ciencia</h2>
+                    <p class="libro-catalogo-autor">Juan Manuel Carballeda</p>
+                    <p class="libro-catalogo-descripcion">Historias de todo el mundo atravesadas por la ciencia y narradas por Juan Manuel Carballeda en un libro ilustrado. Narraciones de ciencia por y para humanos.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-17.png" alt="Portada del libro 118. El universo en una tabla" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">118. El universo en una tabla</h2>
+                    <p class="libro-catalogo-autor">Muchísimos autores y autoras</p>
+                    <p class="libro-catalogo-descripcion">Todos los elementos de la tabla periódica en un libro a 4 tintas. Más de 90 autores presentan un texto por cada elemento para transitar la tabla de una forma nueva.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-18.png" alt="Portada del libro Tabú" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Tabú</h2>
+                    <p class="libro-catalogo-autor">Andrés Rieznikd</p>
+                    <p class="libro-catalogo-descripcion">Un viaje desde los modernos descubrimientos de la genética y la biología del comportamiento humano, pasando por las aplicaciones de la neurobiología en educación y salud mental.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="libro-catalogo-item">
+                <img src="img/libro-19.png" alt="Portada del libro Ministerio de Invierno" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Ministerio de Invierno</h2>
+                    <p class="libro-catalogo-autor">Juan Cruz Balian</p>
+                    <p class="libro-catalogo-descripcion">Una mujer desaparecida, un invierno sin bordes y un viaje a las profundidades de un edificio gubernamental tras la pista de un expediente perdido. Una novela sobre la obsesión.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="libro-catalogo-item">
+                <img src="img/libro-20.png" alt="Portada del libro Simple e Imperfecto" class="libro-catalogo-imagen">
+                <div class="libro-catalogo-info">
+                    <h2 class="libro-catalogo-titulo">Simple e Imperfecto</h2>
+                    <p class="libro-catalogo-autor">Juan Cruz Balian</p>
+                    <p class="libro-catalogo-descripcion">Simple e Imperfecto es un libro de cuentos escrito por Juan Cruz Balian. Son historias de ciencia ficción que nos invitan a pensar a dónde nos lleva la ciencia.</p>
+                    <div class="libro-catalogo-botones">
+                        <a href="#" class="boton">Leer</a>
+                        <a href="#" class="boton boton-secundario">Comprar</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-contenedor">
+            <div class="footer-columna">
+                <p>© 2025 El Gato y La Caja</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Síguenos en nuestras redes sociales</h4>
+                <div class="social-iconos">
+                    <a href="https://www.instagram.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/elgatoylacaja/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-columna">
+                <h4>Contáctanos</h4>
+                <a href="mailto:miau@elgatoylacaja.com" class="footer-contacto-link">miau@elgatoylacaja.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>

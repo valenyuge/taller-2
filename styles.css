@@ -1,0 +1,1239 @@
+/* ==================================================================== */
+/* --- 1. ESTILOS GLOBALES Y CONFIGURACIÓN DE FUENTE --- */
+/* ==================================================================== */
+
+/* ==================================================================== */
+/* --- 2. ENCABEZADO --- */
+/* ==================================================================== */
+
+.encabezado {
+    width: 100%;
+    height: 80px;
+    background-color: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content: space-between;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.logo-titulo {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none;
+    color: inherit;
+}
+
+.encabezado h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0;
+    color: #ffffff;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    filter: invert(1);
+}
+
+.navegacion-principal ul {
+    display: flex; 
+    gap: 35px; 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.navegacion-principal a {
+    font-family: 'Gotham', sans-serif; 
+    font-weight: 500; 
+    font-size: 16px;
+    color: #c0c0c0;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.navegacion-principal a:hover {
+    color: #ffffff;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    border: 1px solid #444;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2a2a2a;
+    border: 1px solid transparent; 
+    background:
+        linear-gradient(#2a2a2a, #2a2a2a) padding-box,
+        linear-gradient(to right, #009EB7, #ffffff) border-box;
+
+}
+
+.input-busqueda {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #e0e0e0;
+}
+
+.input-busqueda::placeholder {
+    color: #888;
+}
+
+.boton-busqueda {
+    border: none;
+    background: transparent;
+    padding: 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.boton-busqueda img {
+    height: 20px;
+    width: auto; 
+    filter: invert(1);
+}
+
+/* ==================================================================== */
+/* --- 3. PORTADA --- */
+/* ==================================================================== */
+
+.portada {
+    min-height: 90vh; 
+    padding: 60px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.portada::before {
+    content: ''; /* Requerido para que el pseudo-elemento se muestre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1));    
+    z-index: 2;
+}
+
+.video-fondo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1; 
+}
+
+.portada-contenido {
+    max-width: 1200px; 
+    margin: 0 auto;    
+    text-align: center;
+    display: grid;
+    place-items: center;
+    position: relative;
+    min-height: 350px; 
+    position: relative;
+    z-index: 3;
+}
+
+.opciones-portada {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 0;
+}
+
+.boton-portada {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ffffff;
+    border: 2px solid transparent;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+
+/* --- Botón Libros (Azul/Celeste) --- */
+.boton--libros {
+    background:
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(to right, #382D68, #999999) border-box;
+}
+.boton--libros:hover {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(to right, #382D68, #999999) border-box;
+    color: #121212;
+}
+
+/* --- Botón Podcast (Verde/Turquesa) --- */
+.boton--podcast {
+    background:
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(to right, #CA4648, #999999) border-box;
+}
+.boton--podcast:hover {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(to right, #CA4648, #999999) border-box;
+    color: #121212;
+}
+
+/* --- Botón Experiencias (Violeta/Rosa) --- */
+.boton--experiencias {
+    background:
+        linear-gradient(#121212, #121212) padding-box,
+        linear-gradient(to right, #B5C62C, #999999) border-box;
+}
+.boton--experiencias:hover {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(to right, #B5C62C, #999999) border-box;
+    color: #121212;
+}
+
+
+
+.step-container {
+    width: 100%;
+    grid-area: 1 / 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.step-container.visible {
+    opacity: 1;
+    pointer-events: auto;
+    position: relative;
+}
+
+.boton-atras {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-family: 'Gotham', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 100px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.boton-atras:hover {
+    opacity: 1;
+}
+
+.portada h1,
+#step-2-libros h2,
+#step-2-podcast h2,
+#step-2-experiencias h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    font-weight: 500; 
+    margin: 0 auto 120px auto;
+    color: #ffffff;
+}
+/* ==================================================================== */
+/* --- 4. COMPONENTES Y ESTILOS REUTILIZABLES --- */
+/* ==================================================================== */
+
+.seccion-libros, .seccion-articulos, .seccion-testimonios {
+    padding: 200px 20px;
+}
+
+.seccion-testimonios {
+    /* Tus estilos actuales */
+    position: relative; /* Importante para que el pseudo-elemento se posicione correctamente */
+    overflow: hidden; /* Para que las estrellas no se salgan del contenedor */
+}
+
+.seccion-testimonios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/estrella.png'); /* Reemplaza con la ruta de tu imagen si usas una */
+    background-repeat: no-repeat; /* Repite la imagen para cubrir todo el fondo */
+    background-size: auto; /* Ajusta el tamaño de la estrella según necesites */
+    background-position: right -420px top -50px;
+    pointer-events: none; /* Permite que los clics interactúen con el contenido debajo */
+    z-index: 1; /* Asegura que las estrellas estén por encima del fondo (el z-index del fondo unificado debería ser menor o no estar definido) */
+}
+
+.seccion-libros > *,
+.seccion-testimonios > * {
+    position: relative;
+    z-index: 2; /* Un número mayor que el z-index de la estrella (que es 1) */
+}
+
+.titulo-seccion {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 900; 
+    font-size: 42px;
+    color: #ffffff; 
+    margin-top: 0;
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.subtitulo-seccion {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300; 
+    font-size: 18px;
+    color: #a0a0a0;
+    max-width: 600px; 
+    margin: 0 auto 30px auto; 
+    line-height: 1.6; 
+    text-align: center;
+}
+
+.boton {
+    font-family: 'Bebas Neue', sans-serif;
+    display: inline-block; 
+    font-weight: 700; 
+    text-decoration: none;
+    color: #121212;
+    background-color: #ffffff;
+    padding: 15px 80px;
+    border-radius: 10px; 
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.boton:hover {
+    background-color: #c0c0c0;
+    transform: translateY(-3px); 
+}
+
+.etiqueta {
+    background-color: #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #e0e0e0;
+}
+
+/* ==================================================================== */
+/* --- 5. SECCIÓN: LIBROS --- */
+/* ==================================================================== */
+
+.seccion-libros {
+    padding: 80px 20px; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;  
+}
+
+.seccion-libros {
+    /* Tus estilos actuales */
+    position: relative; /* Importante para que el pseudo-elemento se posicione correctamente */
+    overflow: hidden; /* Para que las estrellas no se salgan del contenedor */
+}
+
+.seccion-libros::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/estrella.png'); /* Reemplaza con la ruta de tu imagen si usas una */
+    background-repeat: no-repeat; /* Repite la imagen para cubrir todo el fondo */
+    background-size: auto; /* Ajusta el tamaño de la estrella según necesites */
+    background-position: right -420px top -50px;
+    pointer-events: none; /* Permite que los clics interactúen con el contenido debajo */
+    z-index: 1; /* Asegura que las estrellas estén por encima del fondo (el z-index del fondo unificado debería ser menor o no estar definido) */
+}
+
+.contenedor-libros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.libro-item {
+    width: 280px;
+    text-align: center;
+}
+
+.libro-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.libro-item:hover img {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.libro-titulo {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    color: #e0e0e0;
+}
+
+.libro-autor {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin: 0;
+}
+
+/* ==================================================================== */
+/* --- 6. SECCIÓN: ARTÍCULOS --- */
+/* ==================================================================== */
+
+.articulos-contenedor {
+    display: flex;
+    align-items: stretch;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.articulos-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.articulos-info .titulo-seccion,
+.articulos-info .subtitulo-seccion {
+    text-align: left;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+}
+
+.articulos-lista {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.articulo-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    transition: border-color 0.3s ease;
+}
+
+.articulo-card:hover {
+    border-color: #555;
+}
+
+.articulo-imagen {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.articulo-contenido {
+    display: flex;
+    flex-direction: column;
+    text-align: left; 
+}
+
+.articulo-titulo {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0 0 5px 0;
+    color: #ffffff;
+}
+
+.articulo-subtitulo {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #a0a0a0;
+    margin: 0 0 15px 0;
+}
+
+.articulo-descripcion {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #c0c0c0;
+    line-height: 1.5;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.articulo-etiquetas {
+    margin: 20px 0 15px 0;
+    display: flex;
+    gap: 8px;
+}
+
+.articulo-autor {
+    font-size: 14px;
+    font-style: italic;
+    color: #888;
+    margin: 0;
+    align-self: flex-end;
+}
+
+.fondo-unificado{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url(img/fondo-libros.gif);
+    background-size: cover;
+}
+
+/* ==================================================================== */
+/* --- 7. SECCIÓN: TESTIMONIOS --- */
+/* ==================================================================== */
+
+
+
+.seccion-testimonios .titulo-seccion,
+.seccion-testimonios .subtitulo-seccion {
+    text-align: center;
+}
+
+
+
+.testimonios-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.testimonio-card {
+    background-color: #242424; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.testimonio-header {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    gap: 12px;
+    background-color: #2a2a2a;
+}
+
+.testimonio-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonio-usuario-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.testimonio-nombre {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.testimonio-meta {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+.testimonio-imagen {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.testimonio-cuerpo {
+    padding: 15px;
+}
+
+.testimonio-comentario {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 15px 0;
+    color: #e0e0e0;
+}
+
+.testimonio-enlace {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.testimonio-enlace:hover {
+    transform: translateY(-5px);
+}
+
+/* ==================================================================== */
+/* --- 8. FOOTER --- */
+/* ==================================================================== */
+
+.site-footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 50px 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}
+
+.footer-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-columna {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-columna:first-child {
+    text-align: left;
+}
+.footer-columna:last-child {
+    text-align: right;
+}
+.footer-columna:nth-child(2) {
+    text-align: center;
+}
+
+.footer-columna h4 {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.social-iconos {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.social-iconos a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-iconos a:hover {
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
+.footer-contacto-link {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contacto-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ==================================================================== */
+/* --- 9. PAGINA LIBROS Y PODCAST --- */
+/* ==================================================================== */
+
+
+.seccion-pagina {
+    padding-top: 60px;
+    text-align: center; 
+    max-width: 1200px;  
+    margin: 0 auto;    
+}
+
+.titulo-pagina {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0 0 15px 0; 
+}
+
+.subtitulo-pagina {
+    font-size: 20px;
+    font-weight: 300;
+    color: #a0a0a0;
+    max-width: 800px; 
+    margin: 0 auto; 
+    line-height: 1.6;
+}
+
+.catalogo-libros-contenedor {
+    max-width: 900px; 
+    margin: 60px auto; 
+    display: grid; 
+    gap: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.libro-catalogo-item {
+    display: flex; 
+    gap: 30px; 
+    background-color: #1e1e1e;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #333;
+}
+
+.libro-catalogo-imagen {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0; 
+}
+
+.libro-catalogo-info {
+    display: flex;
+    flex-direction: column; 
+}
+
+.libro-catalogo-titulo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+}
+
+.libro-catalogo-autor {
+    font-size: 16px;
+    font-weight: 300;
+    color: #a0a0a0;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+.libro-catalogo-descripcion {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.libro-catalogo-botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px; 
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.boton-secundario:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+/* --- ESTILO PARA EL BOTÓN ESPECÍFICO "VER TODOS LOS EPISODIOS" --- */
+
+.boton--ver-episodios {
+    /* 1. Definimos un borde transparente */
+    border: 2px solid transparent;
+
+    /* 2. Aplicamos el truco de los dos fondos */
+    background:
+        /* Capa de arriba: el color de fondo de la sección */
+        linear-gradient(#121212, #121212) padding-box,
+        /* Capa de abajo: tu degradado de verde azulado a rosa */
+        linear-gradient(to right, #58A1A3, #F07AB5) border-box;
+    
+    color: #ffffff; /* Aseguramos que el texto sea blanco */
+}
+
+.boton--ver-episodios:hover {
+    color: #ffffff;
+    /* En el hover, quitamos el fondo interior para revelar el degradado completo */
+    background:
+        linear-gradient(to right, #58A1A3, #F07AB5) border-box,
+        linear-gradient(to right, #58A1A3, #F07AB5) padding-box;
+}
+
+/* ==================================================================== */
+/* --- SECCIÓN DE PODCAST DESTACADO (CON CARRUSEL) --- */
+/* ==================================================================== */
+
+.seccion-podcast {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Usamos un selector más específico para "ganarle" a otros estilos */
+section.seccion-podcast .podcast-carousel {
+    width: 100%;
+    max-width: 1000px; /* Ancho para el contenido, dejando espacio para las flechas */
+    margin: 60px auto 0 auto;
+    position: relative;
+    box-sizing: border-box;
+
+    /* La clave para que las flechas se vean por fuera */
+    overflow: visible; 
+    
+    /* --- Variables para personalizar Swiper --- */
+    --swiper-navigation-color: #ffffff; 
+    --swiper-navigation-sides-offset: -200px; /* Valor negativo para sacar las flechas */
+}
+
+/* Contenido DENTRO de cada diapositiva */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px; /* Ancho de cada slide individual */
+    height: 450px; /* Altura de cada slide */
+}
+
+/* Estilos para los puntos de paginación de Swiper */
+.swiper-pagination-bullet {
+    background: #888;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+/* Contenedor del contenido DENTRO de cada diapositiva */
+.podcast-destacado-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    text-align: left;
+    width: 100%;
+}
+
+/* Columna de la imagen */
+.podcast-destacado-imagen {
+    flex: 1;
+}
+
+.podcast-destacado-imagen img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Columna de la información */
+.podcast-destacado-info {
+    flex: 1.2;
+}
+
+.etiqueta-destacado {
+    display: inline-block;
+    background-color: grey; /* Color de acento */
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.podcast-destacado-titulo {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 15px 0;
+}
+
+.podcast-destacado-descripcion {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #a0a0a0;
+    margin: 0 0 30px 0;
+}
+
+/* Contenedor para el botón de Ver Todos, para darle espacio superior */
+.seccion-ver-todos {
+    margin-top: 60px;
+}
+
+
+/* ==================================================================== */
+/* --- 9. PAGINA EXPERIENCIAS --- */
+/* ==================================================================== */
+
+.experiencias-grid-contenedor {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0px auto; 
+    padding: 0 20px; 
+}
+
+.experiencia-card {
+    display: flex;
+    flex-direction: column; 
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden; 
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experiencia-card:hover {
+    transform: translateY(-5px); 
+    border-color: #555;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.experiencia-imagen {
+    width: 100%;
+    aspect-ratio: 640 / 480; 
+    object-fit: cover; 
+}
+
+.experiencia-contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 25px; 
+    flex-grow: 1; 
+}
+
+.experiencia-titulo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+}
+
+.experiencia-subtitulo {
+    font-size: 15px;
+    font-weight: 300;
+    color: #a0a0a0;
+    margin: 0 0 20px 0;
+    font-style: italic;
+}
+
+.experiencia-descripcion {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.seccion-pagina {
+    padding-top: 60px; 
+    text-align: center; 
+    max-width: 1200px; 
+    margin: 0 auto;     
+}
+
+.titulo-pagina {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0 0 15px 0; 
+}
+
+.subtitulo-pagina {
+    font-size: 20px;
+    font-weight: 300;
+    color: #a0a0a0;
+    max-width: 800px; 
+    margin: 0 auto; 
+    line-height: 1.6;
+}
+
+/* ==================================================================== */
+/* --- 9. PAGINA NOTAS --- */
+/* ==================================================================== */
+
+.paginacion-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 60px 0; /* Espacio arriba y abajo de la paginación */
+}
+
+.paginacion-boton {
+    font-family: 'Gotham', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #a0a0a0;
+    padding: 10px 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.paginacion-boton:hover {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #555;
+}
+
+/* Estilo para el botón de la página actual */
+.paginacion-boton.actual {
+    background-color: #ffffff;
+    color: #121212;
+    border-color: #ffffff;
+    cursor: default; /* El cursor no cambia porque ya estás en esa página */
+}
+
+/*fondos*/
+
+.fondo-seccion {
+    /* Propiedades de tamaño y posición */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* El degradado oscuro que se aplicará a todas las secciones */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+
+    /* Otros estilos que quieras que compartan, como el padding */
+    padding: 80px 20px;
+    position: relative; 
+}
+
+/* Clase modificadora para el fondo de la sección de Libros */
+.fondo-libros {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), /* El degradado */
+        url('img/Fondo-Libros.png'); /* La imagen específica */
+}
+
+/* Clase modificadora para el fondo de la sección de Artículos */
+.fondo-notas {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/fondo-articulos.gif'); /* Otra imagen */
+}
+
+.fondo-podcast {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/fondo-podcast.gif'); /* Otra imagen */
+}
+
+.fondo-experiencias {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7)),
+        url('img/fondo-experiencias.gif'); /* Otra imagen */
+        padding-bottom: 30px;
+}
+
+/* --- ESTILOS PARA LA NUEVA PORTADA DE PÁGINAS INTERNAS --- */
+
+/* Estilo para el subtítulo dentro del H1 */
+.subtitulo-portada {
+    font-family: 'Gotham', sans-serif; /* Usamos la fuente normal, no Bebas Neue */
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: normal; /* Reseteamos el espaciado de letras si lo hubiera */
+    text-transform: none; /* Reseteamos la transformación a mayúsculas */
+}
+
+/* Estilo para la nueva imagen destacada */
+.imagen-portada-destacada {
+    display: block; /* Para que el margen funcione correctamente */
+    max-width: 500px; /* Ancho máximo de la imagen */
+    width: 90%;       /* Ancho relativo para pantallas más chicas */
+    height: auto;
+    margin: 40px auto; /* 40px de espacio arriba/abajo y la centra horizontalmente */
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ==================================================================== */
+/* --- PORTADAS DE PÁGINAS INTERNAS (Libros, Podcast, etc.) --- */
+/* ==================================================================== */
+
+/* Estilo base para las portadas de páginas internas */
+.portada-interna {
+    min-height: 90vh; /* Ocupa el 90% de la altura de la pantalla */
+    padding: 60px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)), url('img/fondo-libros.gif');
+}
+
+/* (En el futuro, podrías crear otra para podcast) */
+
+
+/* Contenedor del contenido dentro de estas portadas */
+.portada-contenido-interno {
+    max-width: 1200px; 
+    margin: 0 auto;    
+}
+
+/* Imagen destacada para estas portadas */
+.imagen-portada-destacada {
+    display: block;
+    max-width: 450px;
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* --- NUEVO CONTENEDOR PARA EL FONDO DEL CATÁLOGO --- */
+.seccion-catalogo-fondo {
+    /* El fondo con imagen y degradado va aquí */
+    
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+        url('img/Fondo-Podcast.jpg'); /* <-- La ruta a tu imagen */
+    background-color: black;
+    transition: background-color 1-s ease-out;
+    
+    background-size: cover;
+    background-position: center;
+
+    /* El padding ahora va aquí para dar espacio vertical */
+    padding: 80px 20px;
+}
+
+/* Estilo para la caja exterior (el lienzo del fondo) */
+.seccion-catalogo-fondo {
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url('img/Fondo-Libros.png');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px; /* Espacio vertical */
+}
+
+/* Estilo para la caja interior (el contenido) */
+.catalogo-libros-contenedor {
+    max-width: 900px; /* Ancho máximo para el contenido */
+    margin: 0 auto;   /* Centra el contenido */
+    display: grid;
+    gap: 40px;
+}
+
+/* Fondo específico para la página de Notas */
+.fondo-notas {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/fondo-notas.png'); /* <-- Pon aquí la ruta a tu imagen para las notas */
+    
+    /* Propiedades para que la imagen se vea bien */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* O 'fixed' para el efecto parallax */
+    padding: 80px 20px;
+
+/* Sección de fondo para la página de Notas (ocupa todo el ancho) */
+.seccion-fondo-notas {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url('img/fondo-notas.jpg'); /* <-- Pon aquí la ruta a tu imagen para las notas */
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll; /* O 'fixed' para el efecto parallax */
+    padding: 60px 20px; /* Espacio vertical alrededor del contenido */
+}
+
+/* Aseguramos que el grid de experiencias esté centrado */
+.seccion-fondo-notas .experiencias-grid-contenedor {
+    max-width: 1200px; /* O el ancho máximo que desees para tu contenido */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: grid; /* Asegúrate de que siga siendo un grid */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mantén tu layout de grid */
+    gap: 30px; /* Mantén el espacio entre las tarjetas */
+}
+
+/* Centramos también la paginación */
+.seccion-fondo-notas .paginacion-contenedor {
+    max-width: 1200px; /* Debe coincidir con el ancho del grid */
+    margin: 20px auto; /* Centra horizontalmente y añade espacio arriba */
+    text-align: center; /* Centra los botones de paginación */
+}
+/* --- ESTILOS PARA LAS SECCIONES DE CATÁLOGO --- */
+
+}
