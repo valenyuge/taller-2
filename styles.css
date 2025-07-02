@@ -1241,50 +1241,54 @@ section.seccion-podcast .podcast-carousel {
     margin: 20px auto; /* Centra horizontalmente y añade espacio arriba */
     text-align: center; /* Centra los botones de paginación */
 }
-/* --- ESTILOS PARA LAS SECCIONES DE CATÁLOGO --- */
+
+}
 
 /* ==================================================================== */
 /* --- ESTILOS PARA PÁGINA DE NOTA INDIVIDUAL --- */
 /* ==================================================================== */
 
-/* Portada con imagen de fondo a todo el ancho */
+/* La portada con la imagen de fondo a todo el ancho */
 .articulo-portada {
-    height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
-    position: relative; /* Para posicionar el texto encima */
+    height: 90vh; /* Ocupa el 60% de la altura de la pantalla */
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: #ffffff;
     
     /* La imagen de fondo con un velo oscuro para que el texto resalte */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/articulos-1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('img/foto-articulo.png');
     background-size: cover;
     background-position: center;
+    padding: 40px 10%;
 }
 
 .articulo-portada-contenido {
-    max-width: 800px;
+    width: 100%;
+    height: 92%;
     padding: 20px;
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: space-between; /* ¡La magia! Envía el primer hijo arriba y el último abajo */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .articulo-portada-titulo {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 72px;
+    font-size: 72px; /* Un tamaño grande para el título del artículo */
     line-height: 1.1;
     margin: 0;
-    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Sombra para el texto */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5); /* Sombra para que se lea mejor */
 }
 
 .articulo-portada-autor {
-    font-family: 'Gotham', sans-serif;
-    font-size: 18px;
+    font-family: sans-serif;
+    font-size: 30px;
     font-style: italic;
     margin: 15px 0 0 0;
     opacity: 0.9;
 }
 
-/* Cuerpo del artículo, con ancho de lectura cómodo */
+/* El cuerpo del artículo con un ancho de lectura cómodo */
 .articulo-cuerpo {
     max-width: 700px; /* Ancho ideal para la lectura de texto largo */
     margin: 80px auto; /* Centra el bloque de texto y le da espacio vertical */
@@ -1296,9 +1300,29 @@ section.seccion-podcast .podcast-carousel {
     line-height: 1.8;
     color: #e0e0e0;
     margin-bottom: 1.5em; /* Espacio entre párrafos */
+    font-family: sans-serif;
+}
+/* --- ESTILO PARA EL TÍTULO CENTRADO DEL ARTÍCULO --- */
+
+.articulo-subtitulo-principal {
+    font-family: 'Bebas Neue', sans-serif; /* La tipografía que quieres */
+    font-size: 64px; /* Un tamaño un poco más pequeño que el de la portada */
+    font-weight: 700;
+    text-align: left; /* La clave para centrarlo */
+    margin-bottom: 1em; /* Espacio generoso para separarlo del primer párrafo */
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
+.articulo-tercer-titulo {
+    /* Mismos estilos que el H2 */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    text-align: left;
+    color: #ffffff;
+    letter-spacing: 1px;
 
-
-
+    /* --- PERO MÁS PEQUEÑO --- */
+    font-size: 32px;      /* Tamaño reducido */
+    margin-bottom: 1.5em; /* Margen inferior un poco más pequeño */
 }
