@@ -1091,7 +1091,8 @@ section.seccion-podcast .podcast-carousel {
 .fondo-podcast {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('img/fondo-podcast.gif'); /* Otra imagen */
+        url('img/Fondo-Podcast.jpg'); /* Otra imagen */
+        padding-bottom: 30px;
 }
 
 .fondo-experiencias {
