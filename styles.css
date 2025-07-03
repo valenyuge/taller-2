@@ -827,11 +827,9 @@
 }
 
 .boton--ver-episodios:hover {
-    color: #ffffff;
+    color: black;
     /* En el hover, quitamos el fondo interior para revelar el degradado completo */
-    background:
-        linear-gradient(to right, #58A1A3, #F07AB5) border-box,
-        linear-gradient(to right, #58A1A3, #F07AB5) padding-box;
+    background: white;
 }
 
 /* ==================================================================== */
