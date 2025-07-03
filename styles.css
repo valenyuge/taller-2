@@ -335,7 +335,7 @@
     padding: 15px 80px;
     border-radius: 10px; 
     transition: all 0.3s ease;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .boton:hover {
