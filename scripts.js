@@ -47,7 +47,7 @@ if (podcastCarousel) {
         centeredSlides: true,
         slidesPerView: 'auto',
         loop: true,
-
+        speed: 1400,
         // ===== AÑADE ESTA LÍNEA PARA EL ESPACIADO =====
         spaceBetween: 400, // Espacio de 30px entre cada diapositiva
       
