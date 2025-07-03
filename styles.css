@@ -1294,6 +1294,7 @@ section.seccion-podcast .podcast-carousel {
     max-width: 700px; /* Ancho ideal para la lectura de texto largo */
     margin: 80px auto; /* Centra el bloque de texto y le da espacio vertical */
     padding: 0 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.), rgba(0, 0, 0, 0.8)), url(img/fondo-notas.png)
 }
 
 .articulo-cuerpo p {
