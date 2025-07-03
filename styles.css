@@ -1124,7 +1124,7 @@ section.seccion-podcast .podcast-carousel {
 /* Estilo para la nueva imagen destacada */
 .imagen-portada-destacada {
     display: block; /* Para que el margen funcione correctamente */
-    max-width: 500px; /* Ancho máximo de la imagen */
+    max-width: 900px; /* Ancho máximo de la imagen */
     width: 90%;       /* Ancho relativo para pantallas más chicas */
     height: auto;
     margin: 40px auto; /* 40px de espacio arriba/abajo y la centra horizontalmente */
@@ -1163,7 +1163,7 @@ section.seccion-podcast .podcast-carousel {
 /* Imagen destacada para estas portadas */
 .imagen-portada-destacada {
     display: block;
-    max-width: 450px;
+    max-width: 900px;
     width: 90%;
     height: auto;
     margin: 40px auto;
