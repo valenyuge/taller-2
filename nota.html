@@ -3,88 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Gato y La Caja | Un Futuro Vivo</title>
+
     <link rel="stylesheet" href="styles.css" />    
     <link rel="stylesheet" href="globals.css" />    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <title>El Gato y La Caja | Un Futuro Vivo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="encabezado">
-    <a href="index.html" class="logo-titulo">
-        <img src="img/logo-negro.png" alt="logo" class="logo">
-        <h1>El Gato y La Caja</h1>
-    </a>
+        <a href="index.html" class="logo-titulo">
+            <img src="img/logo-negro.png" alt="logo" class="logo">
+            <h1>El Gato y La Caja</h1>
+        </a>
+        <nav class="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="libros.html">Libros</a></li>
+                <li><a href="notas.html">Notas</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="experiencias.html">Experiencias</a></li>
+                <li><a href="tienda.html">Tienda</a></li>
+            </ul>
+        </nav>
+        <form class="buscador">
+            <input type="text" class="input-busqueda" placeholder="Buscar">
+            <button type="submit" class="boton-busqueda">
+                <img src="img/lupa-negra.png" alt="Buscar">
+            </button>
+        </form>
+    </header>
 
-    <nav class="navegacion-principal">
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="libros.html">Libros</a></li>
-            <li><a href="notas.html">Notas</a></li>
-            <li><a href="podcast.html">Podcast</a></li>
-            <li><a href="experiencias.html">Experiencias</a></li>
-            <li><a href="tienda.html">Tienda</a></li>
-        </ul>
-    </nav>
+        <aside id="quiz-flotante" class="quiz-contenedor">
+            <h4 class="quiz-pregunta">Descubrí más</h4>
+            <div class="quiz-opciones">
+                <a href="libros.html" class="quiz-opcion boton--libros">Libros 📘</a>
+                <a href="podcast.html" class="quiz-opcion boton--podcast">Podcast 🎧</a>
+                <a href="experiencias.html" class="quiz-opcion boton--experiencias">Experiencias 🧩</a>
+             </div>
+        </aside>
 
-    <form class="buscador">
-        <input type="text" class="input-busqueda" placeholder="Buscar">
-        <button type="submit" class="boton-busqueda">
-            <img src="img/lupa-negra.png" alt="Buscar">
-        </button>
-    </form>
-</header>
-
- <main>
-        <section class="articulo-portada">
-            <div class="articulo-portada-contenido">
-                <h1 class="articulo-portada-titulo">Un Futuro Vivo</h1>
-                <p class="articulo-portada-autor">Pablo A. González, Juama Garrido</p>
-            </div>
+    <main class="articulo-fondo">
+        <section class="seccion-imagen-unica">
+            <img src="img/notacompleta.png">
         </section>
-
-        <article class="articulo-cuerpo">
-            <h2 class="articulo-subtitulo-principal">Parte I | Bosta en las ruedas</h2>
-            <p>Durante más de cinco mil años, el caballo fue la piedra angular de la movilidad terrestre. Sin embargo, en tan sólo una década, el automóvil lo relegó al pasado. Primero fueron los autos en las calles de las principales ciudades del mundo: el caucho y la combustión reemplazaron el olor a bosta, sonaron motores y bocinas donde antes había relinchos y golpes de cascos en la tierra. La publicidad —enalteciendo la máquina y denostando la tracción a sangre— logró que la pintura negra y metálica se volviera objeto de deseo. Más autos llevaron a cabo más viajes, más viajes plantearon la necesidad de más infraestructura. Pronto las ciudades necesitaron veredas para los peatones y semáforos para organizar el tránsito, parquímetros en lugar de bebederos. En 1910 las calles de Nueva York estaban dominadas por carruajes y establos; para 1920 el paisaje urbano había sido reconfigurado por completo. </p>
-            <p>Con esta reconfiguración, llegaron efectos sistémicos inesperados: la disrupción del caballo por el auto no se limitó a suplantar la forma en la que nos movemos en las ciudades, sino que cambió a las ciudades en su misma esencia: sus prioridades de habitación, su administración del espacio, las cadenas de suministros, las profesiones relevantes y hasta los deseos y cultura de sus habitantes. </p> 
-            <p> Este único evento tiene muchas lecciones para enseñarnos, pero hay una que no debemos perder de vista: una disrupción tecnológica tiene el poder de cambiar el mundo, literalmente y casi de inmediato.</p> <p>Esta es la primera lección aprendida y, a la vez, sólo el comienzo de lo que necesitamos entender.</p>
-            <h3 class="articulo-tercer-titulo">Sin retorno</h3>
-            <p>La velocidad con la que adoptamos nuevas tecnologías se aceleró drásticamente a partir de la Revolución Industrial y la primera versión del capitalismo. Los hidrocarburos demoraron casi un siglo en penetrar hasta el último capilar de nuestra civilización, pero la electrificación tardó apenas unas décadas e internet lo logró en una fracción de ese tiempo. Modelos avanzados de inteligencia artificial como ChatGPT lo hicieron en cuestión de semanas.
-            Claro que esta aceleración no es un accidente: cada nueva tecnología se apoyó en los cimientos de sus predecesoras para crecer. Pero, a la vez, ofreció ventajas comparativas innegables. Profundas. Verdaderos cambios de paradigma. Y es que si hay una segunda lección que debamos apurar, es esta: la esencia de una disrupción es una propuesta de mundo sin retorno. </p>
-            <p>La electricidad no sólo sustituyó el gas en la iluminación: hizo posible la automatización de procesos industriales y domésticos. Los dispositivos móviles no sólo facilitaron la comunicación: instauraron una conectividad permanente que reconfiguró la vida cotidiana y el mercado global. En todos los casos, se trató de la creación de un nuevo mundo, construido sobre los cimientos del anterior, pero que ya poco tenía que ver con aquel. Tras cada disrupción, los seres humanos modificaron sus sistemas productivos, sus hábitos de consumo, sus dinámicas sociales y comunicacionales, sus modos de vincularse e, incluso, su forma de comportarse en soledad. </p>
-            <p>Si la primera lección fue que las disrupciones tienen el poder de transformar el mundo de inmediato y la segunda fue que esa transformación no tiene retorno, agreguemos una más: los resultados de ese cambio son, en última instancia, inesperados. Supimos muy rápidamente que el mundo no iba a ser el mismo después de inventado el auto, lo que nos tomó décadas entender fue distinto cómo.</p>
-        </article>
     </main>
-
-<footer class="site-footer">
-    <div class="footer-contenedor">
         
-        <div class="footer-columna">
-            <p>&copy; 2025 El Gato y La Caja</p>
-        </div>
 
-        <div class="footer-columna">
-            <h4>Seguinos en nuestras redes sociales</h4>
-            <div class="social-iconos">
-                <a href="https://www.instagram.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-                <a href="https://x.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/company/elgatoylacaja/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a>
+    <footer class="site-footer">
+        <div class="footer-contenedor">
+            <div class="footer-columna">
+                <p>© 2025 El Gato y La Caja</p>
+            </div>
+            <div class="footer-columna">
+                <h4>Seguinos en nuestras redes sociales</h4>
+                <div class="social-iconos">
+                    <a href="https://www.instagram.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/elgatoylacaja/" target="_blank" rel="noopener noreferrer" aria-label="Linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/elgatoylacaja" target="_blank" rel="noopener noreferrer" aria-label="Github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="footer-columna">
+                <h4>Contáctanos</h4>
+                <a href="mailto:miau@elgatoylacaja.com" class="footer-contacto-link">miau@elgatoylacaja.com</a>
             </div>
         </div>
-
-        <div class="footer-columna">
-            <h4>Contactanos</h4>
-            <a href="mailto:miau@elgatoylacaja.com" class="footer-contacto-link">miau@elgatoylacaja.com</a>
-        </div>
-
-    </div>
-</footer>
+    </footer>
 
     <script src="scripts.js"></script>
 </body>
