@@ -976,15 +976,18 @@
 }
 
 .boton-secundario {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    
+    border: 2px solid transparent;
+    background:  
+        linear-gradient(#1e1e1e, #1e1e1e) padding-box,
+        linear-gradient(to right, #A422E5, #ffffff) border-box;    
+    color: #ffffff; 
 }
 
+
+
 .boton-secundario:hover {
-    background-color: #ffffff;
-    color: #121212;
+    color: black;
+    background: white;
 }
 
 
