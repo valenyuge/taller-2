@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <title>El Gato y La Caja | Ciencia + diseño</title>
 </head>
 <body>
@@ -40,52 +43,95 @@
 </header>
 <main class="contenido">
     <section class="portada">
-        <video autoplay muted loop playsinline class="video-fondo">
-            <source src="img/fondo-portada.mp4" type="video/mp4"> 
-        </video>
-        <div class="portada-contenido">
+    <video autoplay muted loop playsinline class="video-fondo">
+        <source src="img/fondo-portada.mp4" type="video/mp4">
+    </video>
 
-    <div id="step-1" class="step-container">
-        <h1>HACÉ DE LA CIENCIA <br>TU PROPIA AVENTURA</h1>
-        <div class="opciones-portada">
-            <a href="#" class="boton-portada boton--libros" data-target="#step-2-libros">Lee Nuestros Libros 📘</a>
-            <a href="#" class="boton-portada boton--podcast" data-target="#step-2-podcast">Escucha Nuestro Podcast 🎧</a>
-            <a href="#" class="boton-portada boton--experiencias" data-target="#step-2-experiencias">Sumergite en nuestras experiencias 🧩</a>
+    <nav class="navegacion-pasos"></nav>
+
+    <div class="portada-contenido">
+
+        <div id="step-1" class="step-container">
+            <div class="step-content">
+                <h1>HACÉ DE LA CIENCIA <br>TU PROPIA AVENTURA</h1>
+                <div class="opciones-portada">
+                    <a href="#" class="boton-portada boton--libros" data-target="#step-2-libros" data-title="Nuestras Historias">Lee Nuestras Historias 📘</a>
+                    <a href="javascript:void(0);" class="boton-portada boton--podcast boton--inactivo">Escuchá Nuestro Podcast 🎧</a>
+                    <a href="javascript:void(0);" class="boton-portada boton--experiencias boton--inactivo">Sumergite en nuestras experiencias 🧩</a>
+                </div>
+            </div>
         </div>
-    </div>
 
-    <div id="step-2-libros" class="step-container hidden">
-        <h2>¿Qué libro te vas a robar primero?</h2>
-        <div class="opciones-portada">
-            <a href="nota.html" class="boton-portada boton--libros">Historia 📜</a>
-            <a href="nota.html" class="boton-portada boton--podcast">Ciencia y Naturaleza 🧪</a>
-            <a href="nota.html" class="boton-portada boton--experiencias">Ciencia Ficción 🪐</a>
+        <div id="step-2-libros" class="step-container">
+            <div class="step-content">
+                <h2>Elegiste historias. ahora contanos <br>qué tipo de historia querés vivir</h2>
+                <div class="opciones-portada">
+                    <a href="javascript:void(0);" class="boton-portada boton--libros boton--inactivo">Cosas que nos hacen pensar 💬</a>
+                    <a href="#" class="boton-portada boton--podcast" data-target="#step-3-libros-humanidad" data-title="Humanidad en movimiento">Humanidad en movimiento 🌱</a>
+                    <a href="javascript:void(0);" class="boton-portada boton--experiencias boton--inactivo">Conexiones Inesperadas 🧲</a>
+                </div>
+            </div>
         </div>
-        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
-    </div>
 
-    <div id="step-2-podcast" class="step-container hidden">
-        <h2>¿Qué historia necesitas escuchar hoy?</h2>
-        <div class="opciones-portada">
-            <a href="nota.html" class="boton-portada boton--libros">Ciencia y Salud 🧪</a>
-            <a href="nota.html" class="boton-portada boton--podcast">Sociedad y Cultura 🌐</a>
-            <a href="nota.html" class="boton-portada boton--experiencias">Ficción y Narrativa 📖</a>
+        <div id="step-3-libros-humanidad" class="step-container">
+            <div class="step-content">
+                <h2>Esto pinta interesante... <br>Mirá lo que tenemos para vos.</h2>
+                <div class="opciones-portada">
+                    <a href="javascript:void(0);" class="boton-portada boton--libros boton--inactivo">Ideas que te encienden 🧠</a>
+                    <a href="#" class="boton-portada boton--podcast" data-target="#step-4-futuros" data-title="Futuros que se sienten cerca">Futuros que se sienten cerca 🧬</a>
+                    <a href="javascript:void(0);" class="boton-portada boton--experiencias boton--inactivo">Pequeñas Revoluciones Cotidianas 💥</a>
+                </div>
+            </div>
         </div>
-        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
-    </div>
 
-    <div id="step-2-experiencias" class="step-container hidden">
-        <h2>¿Qué parte de la realidad querés desarmar primero?</h2>
-        <div class="opciones-portada">
-            <a href="nota.html" class="boton-portada boton--libros">Futuro y Tecnologia 🤖</a>
-            <a href="nota.html" class="boton-portada boton--podcast">Alimentación y Salud 🥕</a>
-            <a href="nota.html" class="boton-portada boton--experiencias">Mente y Pensamiento Crítico 🧠</a>
+        <div id="step-4-futuros" class="step-container">
+    <div class="step-content">
+
+        <div class="step-4-texto-wrapper">
+            <div class="titulo-con-flecha">
+                <img src="img/flechitas-portada.png" alt="Flecha decorativa">
+                <h2>Futuros que se sienten cerca</h2>
+            </div>
+            <h4>Según lo que elegiste, te tiramos estas tres joyitas<br>para que sigas copándote:</h4>
         </div>
-        <button class="boton-atras" data-target="#step-1"><i class="fas fa-arrow-left"></i> Volver</button>
-    </div>
 
+        <div class="opciones-portada modo-cards">
+            <a href="javascript:void(0)" class="card-enlace">
+                <article class="articulo-card">
+                    <img src="img/articulos-2.png" class="articulo-imagen">
+                    <div class="articulo-contenido">
+                        <h3 class="articulo-titulo">2040: Modelo para armar</h3>
+                        <p class="articulo-subtitulo">Cuatro futuros posibles marcados por la revolución biotecnológica.</p>
+                    </div>
+                </article>
+            </a>
+            <a href="javascript:void(0)" class="card-enlace">
+                <article class="articulo-card">
+                    <img src="img/imagen-portada-opciones.png" class="articulo-imagen">
+                    <div class="articulo-contenido">
+                        <h3 class="articulo-titulo">Un futuro vivo</h3>
+                        <p class="articulo-subtitulo">Un viaje al futuro donde la tecnologia y la vida se mezclan como nunca.</p>
+                    </div>
+                </article>
+            </a>
+            <a href="javascript:void(0)" class="card-enlace">
+                <article class="articulo-card">
+                    <img src="img/articulos-2.png" class="articulo-imagen">
+                    <div class="articulo-contenido">
+                        <h3 class="articulo-titulo">2040: Modelo para armar</h3>
+                        <p class="articulo-subtitulo">Cuatro futuros posibles marcados por la revolución biotecnológica.</p>
+                    </div>
+                </article>
+            </a>
+        </div>
+
+    </div>
 </div>
-        </section>
+    </div>
+</section>
+
+
+
         <div class="fondo-unificado">
     <section class="seccion-libros">
         <h2 class="titulo-seccion">Nuestra biblioteca</h2>
