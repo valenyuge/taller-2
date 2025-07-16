@@ -1418,3 +1418,41 @@ section.seccion-podcast .podcast-carousel {
  letter-spacing: 1px;
 }
 
+/* --- ESTILO PARA EL BOTÓN "VOLVER A INICIO" CON DEGRADADO --- */
+
+.boton-volver-inicio {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 10;
+    width: 15px;
+    height: 35px;
+    padding: 0;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#1e1e1e, #1e1e1e) padding-box,
+        linear-gradient(to right, #58A1A3, #F07AB5) border-box;
+}
+
+.boton-volver-inicio:hover {
+    background:
+        linear-gradient(#ffffff, #ffffff) padding-box,
+        linear-gradient(to right, #58A1A3, #F07AB5) border-box;
+    color: #121212; 
+    transform: translateY(-2px); 
+}
+
+.boton-volver-inicio i {
+    font-size: 18px; /* Tamaño del icono de la flecha */
+    line-height: 0; /* Ayuda al centrado perfecto del icono */
+}
