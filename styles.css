@@ -1456,3 +1456,7 @@ section.seccion-podcast .podcast-carousel {
     font-size: 18px; /* Tamaño del icono de la flecha */
     line-height: 0; /* Ayuda al centrado perfecto del icono */
 }
+
+html, body {
+  overflow-x: hidden;
+}
